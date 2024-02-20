@@ -1,0 +1,5 @@
+name: lobbyutils
+version: '1.0-SNAPSHOT'
+main: dev.c127.lobbyutils.Lobbyutils
+api-version: '1.20'
+folia-supported: true
