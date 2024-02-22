@@ -10,11 +10,10 @@ public class OnJoin implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent e) {
         Player player = e.getPlayer();
-        player.setWalkSpeed(2f);
-
         if (player.hasPermission(Lobbyutils.getPlugin().getName() + ".fly")) {
+            player.canFly();
             player.setFlying(true);
-            player.setFlySpeed(2f);
+            player.setFlySpeed(1f);
         }
     }
 }

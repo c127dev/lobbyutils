@@ -31,7 +31,7 @@ public class OnExitArea implements Listener {
             loc.setY(spawn.getY());
 
             if (loc.distance(spawn) < ratio) {
-                e.getPlayer().teleport(spawn);
+                e.getPlayer().teleportAsync(spawn);
                 e.getChunk().unload();
             }
         });
