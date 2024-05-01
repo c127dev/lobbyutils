@@ -11,11 +11,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageEvent;
 
 public class OnDamage implements Listener {
-
-    public OnDamage() {
-        ((CraftServer) Lobbyutils.getPlugin().getServer())
-    }
-
     @EventHandler
     public void handleDamage(EntityDamageEvent e) {
         if (!(e.getEntity() instanceof Player)) return;
